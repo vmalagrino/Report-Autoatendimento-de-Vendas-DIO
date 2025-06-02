@@ -11,19 +11,6 @@ Com base nisso recebemos alguns insights do modelo de IA:
 - Análise por faixa etária dos compradores
 - Conversão de moedas (se necessário para comparação realista entre plataformas)
 
-## Racional feito pelo modelo em Python
-
-import pandas as pd
-
-Carregar os três arquivos CSV
-aliexpress_df = pd.read_csv("/mnt/data/Meganium_Sales_Data_-_AliExpress.csv")
-etsy_df = pd.read_csv("/mnt/data/Meganium_Sales_Data_-_Etsy.csv")
-shopee_df = pd.read_csv("/mnt/data/Meganium_Sales_Data_-_Shopee.csv")
-
-Exibir as 5 primeiras linhas de cada DataFrame para análise inicial
-aliexpress_preview = aliexpress_df.head()
-etsy_preview = etsy_df.head()
-shopee_preview = shopee_df.head()
-
-aliexpress_preview, etsy_preview, shopee_preview
-
+## Conclusão
+O modelo traz algumas análises rápidas, porém podemos também pedir que ele cruze estes dados, e nos traga valores como soma de vendas, quantidade total, max/min.
+Deste modo não é recomendado a utilização de dados de grande porte, pois o modelo no plano gratuito não tem a capaidade de suportar com preisão a demanda.
